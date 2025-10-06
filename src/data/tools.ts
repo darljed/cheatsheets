@@ -36,5 +36,32 @@ export const tools: Tool[] = [
     keywords: ["ai", "model", "local", "llm", "machine learning"],
     title: "Ollama Cheat Sheet",
     subtitle: "Essential Ollama commands for local AI model management"
+  },
+  {
+    name: "Splunk SPL",
+    href: "/splunk-spl",
+    description: "Splunk Search Processing Language queries",
+    content: "Essential SPL commands for searching and analyzing data in Splunk.",
+    keywords: ["spl", "search", "query", "analytics", "logs"],
+    title: "Splunk SPL Cheat Sheet",
+    subtitle: "Essential Search Processing Language commands"
+  },
+  {
+    name: "Jira JQL",
+    href: "/jira-jql",
+    description: "Jira Query Language for issue searching",
+    content: "Essential JQL queries for finding and filtering Jira issues.",
+    keywords: ["jql", "jira", "query", "issues", "search"],
+    title: "Jira JQL Cheat Sheet",
+    subtitle: "Essential Jira Query Language commands"
+  },
+  {
+    name: "Microsoft KQL",
+    href: "/microsoft-kql",
+    description: "Kusto Query Language for Azure data analysis",
+    content: "Essential KQL queries for analyzing data in Azure Monitor, Sentinel, and Log Analytics.",
+    keywords: ["kql", "kusto", "azure", "analytics", "monitoring"],
+    title: "Microsoft KQL Cheat Sheet",
+    subtitle: "Essential Kusto Query Language commands"
   }
 ];
