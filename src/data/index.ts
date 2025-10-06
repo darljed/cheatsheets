@@ -6,3 +6,6 @@ export { ollamaCommands } from "./ollama";
 export { splunkSplCommands } from "./splunk-spl";
 export { jiraJqlCommands } from "./jira-jql";
 export { microsoftKqlCommands } from "./microsoft-kql";
+export { npmCommands } from "./npm";
+export { yarnCommands } from "./yarn";
+export { nodeCommands } from "./node";

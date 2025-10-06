@@ -63,5 +63,32 @@ export const tools: Tool[] = [
     keywords: ["kql", "kusto", "azure", "analytics", "monitoring"],
     title: "Microsoft KQL Cheat Sheet",
     subtitle: "Essential Kusto Query Language commands"
+  },
+  {
+    name: "npm",
+    href: "/npm",
+    description: "Node Package Manager commands and workflows",
+    content: "Essential npm commands for package management, dependency installation, and project setup.",
+    keywords: ["npm", "package", "manager", "install", "dependencies", "node"],
+    title: "npm Cheat Sheet",
+    subtitle: "Essential Node Package Manager commands"
+  },
+  {
+    name: "Yarn",
+    href: "/yarn",
+    description: "Fast and reliable package manager for JavaScript",
+    content: "Essential Yarn commands for package management, workspaces, and dependency resolution.",
+    keywords: ["yarn", "package", "manager", "javascript", "workspaces", "dependencies"],
+    title: "Yarn Cheat Sheet",
+    subtitle: "Essential Yarn package manager commands"
+  },
+  {
+    name: "Node.js",
+    href: "/node",
+    description: "Node.js runtime commands and flags",
+    content: "Essential Node.js commands for running applications, debugging, and performance optimization.",
+    keywords: ["node", "nodejs", "runtime", "javascript", "debug", "performance"],
+    title: "Node.js Cheat Sheet",
+    subtitle: "Essential Node.js runtime commands and flags"
   }
 ];

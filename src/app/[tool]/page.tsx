@@ -8,7 +8,10 @@ import {
   ollamaCommands, 
   splunkSplCommands, 
   jiraJqlCommands, 
-  microsoftKqlCommands 
+  microsoftKqlCommands,
+  npmCommands,
+  yarnCommands,
+  nodeCommands
 } from "@/data";
 
 const commandsMap = {
@@ -19,6 +22,9 @@ const commandsMap = {
   "splunk-cli": splunkCLICommands,
   "jira-jql": jiraJqlCommands,
   "microsoft-kql": microsoftKqlCommands,
+  npm: npmCommands,
+  yarn: yarnCommands,
+  node: nodeCommands,
 };
 
 interface PageProps {
