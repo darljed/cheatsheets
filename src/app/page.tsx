@@ -85,7 +85,7 @@ export default function Home() {
       
       {filteredTools.length === 0 && searchTerm && (
         <div className="text-center py-8">
-          <p className="text-muted-foreground">No tools found matching "{searchTerm}"</p>
+          <p className="text-muted-foreground">No tools found matching &quot;{searchTerm}&quot;</p>
         </div>
       )}
     </div>
