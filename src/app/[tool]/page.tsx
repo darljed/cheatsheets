@@ -22,11 +22,11 @@ const commandsMap = {
 };
 
 interface PageProps {
-  params: { tool: string };
+  params: Promise<{ tool: string }>;
 }
 
-export default function ToolPageRoute({ params }: PageProps) {
-  const { tool } = params;
+export default async function ToolPageRoute({ params }: PageProps) {
+  const { tool } = await params;
   
   const toolData = tools.find(t => t.href === `/${tool}`);
   const commands = commandsMap[tool as keyof typeof commandsMap];
