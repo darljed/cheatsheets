@@ -65,13 +65,22 @@ export const metadata: Metadata = {
     url: "https://cheatsheets.darl.dev",
     siteName: "Developer Cheat Sheets",
     locale: "en_US",
-    type: "website"
+    type: "website",
+    images: [
+      {
+        url: "/og-image-cs.png",
+        width: 1200,
+        height: 630,
+        alt: "Developer Cheat Sheets - Quick Reference for Professional Tools"
+      }
+    ]
   },
   twitter: {
     card: "summary_large_image",
     title: "Developer Cheat Sheets - Quick Reference for Professional Tools",
     description: "Comprehensive cheat sheets and quick reference guides for developers and IT professionals.",
-    creator: "@darlmatundan"
+    creator: "@darljedm",
+    images: ["/og-image-cs.png"]
   },
   robots: {
     index: true,
