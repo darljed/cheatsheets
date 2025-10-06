@@ -90,5 +90,71 @@ export const splunkCommands: Command[] = [
     description: "Display current configuration settings. Shows effective configuration from all .conf files.",
     example: "splunk show config inputs",
     keywords: ["config", "configuration", "show", "settings"]
+  },
+  {
+    command: "splunk add user",
+    description: "Create new user account with specified roles and capabilities.",
+    example: "splunk add user john -password changeme -role user",
+    keywords: ["user", "create", "account", "role", "security"]
+  },
+  {
+    command: "splunk edit user",
+    description: "Modify existing user properties like password, roles, or email.",
+    example: "splunk edit user john -password newpass -email john@company.com",
+    keywords: ["user", "edit", "modify", "password", "email"]
+  },
+  {
+    command: "splunk remove user",
+    description: "Delete user account from Splunk system.",
+    example: "splunk remove user john",
+    keywords: ["user", "remove", "delete", "account"]
+  },
+  {
+    command: "splunk add role",
+    description: "Create custom role with specific capabilities and index access.",
+    example: "splunk add role analyst -capability search -srchIndexesAllowed main,security",
+    keywords: ["role", "create", "capability", "access", "security"]
+  },
+  {
+    command: "splunk reload deploy-server",
+    description: "Reload deployment server configuration to push updates to clients.",
+    example: "splunk reload deploy-server",
+    keywords: ["deploy", "server", "reload", "configuration", "clients"]
+  },
+  {
+    command: "splunk display app",
+    description: "Show information about installed apps and their status.",
+    example: "splunk display app -name search",
+    keywords: ["app", "display", "information", "status"]
+  },
+  {
+    command: "splunk install app",
+    description: "Install Splunk app from file or Splunkbase.",
+    example: "splunk install app /path/to/app.tar.gz -update 1",
+    keywords: ["install", "app", "splunkbase", "update"]
+  },
+  {
+    command: "splunk remove app",
+    description: "Uninstall Splunk app and remove its files.",
+    example: "splunk remove app myapp",
+    keywords: ["remove", "app", "uninstall", "delete"]
+  },
+  {
+    command: "splunk validate",
+    description: "Validate configuration files for syntax errors.",
+    example: "splunk validate inputs",
+    keywords: ["validate", "configuration", "syntax", "errors"]
+  },
+  {
+    command: "splunk diag",
+    description: "Generate diagnostic bundle for troubleshooting support cases.",
+    example: "splunk diag --collect=etc,log --days=7",
+    keywords: ["diag", "diagnostic", "troubleshoot", "support"]
+  },
+  {
+    command: "splunk migrate",
+    description: "Migrate configuration and data between Splunk versions.",
+    example: "splunk migrate input-csv /path/to/migration.csv",
+    keywords: ["migrate", "upgrade", "configuration", "data"]
   }
 ];

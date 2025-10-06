@@ -90,5 +90,71 @@ export const splunkSplCommands: Command[] = [
     description: "Specify time range for search",
     example: "earliest=-24h latest=now",
     keywords: ["time", "range", "earliest", "latest"]
+  },
+  {
+    command: "| fields",
+    description: "Include or exclude specific fields from results",
+    example: "| fields + _time, host, status | fields - _raw",
+    keywords: ["fields", "include", "exclude", "select"]
+  },
+  {
+    command: "| rename",
+    description: "Rename fields for better readability or standardization",
+    example: "| rename src_ip as \"Source IP\", dest_port as \"Destination Port\"",
+    keywords: ["rename", "alias", "readability", "standardize"]
+  },
+  {
+    command: "| fillnull",
+    description: "Replace null values with specified value or string",
+    example: "| fillnull value=\"Unknown\" user_agent",
+    keywords: ["fillnull", "null", "replace", "default"]
+  },
+  {
+    command: "| transaction",
+    description: "Group events into transactions based on common fields",
+    example: "| transaction sessionid maxspan=30m",
+    keywords: ["transaction", "group", "session", "correlation"]
+  },
+  {
+    command: "| bucket",
+    description: "Group numeric or time values into discrete buckets",
+    example: "| bucket _time span=1h | stats count by _time",
+    keywords: ["bucket", "group", "discrete", "histogram"]
+  },
+  {
+    command: "| eventstats",
+    description: "Add statistical information to each event without grouping",
+    example: "| eventstats avg(response_time) as avg_response by host",
+    keywords: ["eventstats", "statistics", "augment", "enrich"]
+  },
+  {
+    command: "| streamstats",
+    description: "Calculate running statistics across events in time order",
+    example: "| streamstats count as event_number, avg(cpu_usage) as running_avg",
+    keywords: ["streamstats", "running", "cumulative", "time"]
+  },
+  {
+    command: "| multisearch",
+    description: "Run multiple searches simultaneously and combine results",
+    example: "| multisearch [search index=web] [search index=app]",
+    keywords: ["multisearch", "multiple", "parallel", "combine"]
+  },
+  {
+    command: "| append",
+    description: "Add results from another search to current results",
+    example: "| append [search index=backup earliest=-1d@d latest=@d]",
+    keywords: ["append", "add", "combine", "union"]
+  },
+  {
+    command: "| map",
+    description: "Apply search to each result and return combined results",
+    example: "| map search=\"search index=logs host=$host$ error\"",
+    keywords: ["map", "iterate", "apply", "dynamic"]
+  },
+  {
+    command: "| convert",
+    description: "Convert field values to different formats or data types",
+    example: "| convert ctime(_time) as readable_time, dur2sec(duration) as seconds",
+    keywords: ["convert", "format", "datatype", "transform"]
   }
 ];

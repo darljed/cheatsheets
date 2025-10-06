@@ -84,5 +84,59 @@ export const ollamaCommands: Command[] = [
     description: "Show help information for Ollama commands. Get detailed usage instructions for any command.",
     example: "ollama help run",
     keywords: ["help", "usage", "instructions", "documentation"]
+  },
+  {
+    command: "ollama run --verbose",
+    description: "Run model with verbose output. See detailed information about model loading and token generation.",
+    example: "ollama run --verbose llama2",
+    keywords: ["verbose", "debug", "detailed", "tokens"]
+  },
+  {
+    command: "ollama run --format json",
+    description: "Get structured JSON responses from model. Useful for programmatic integration and parsing.",
+    example: "ollama run llama2 --format json 'Explain JSON in one sentence'",
+    keywords: ["json", "structured", "format", "programmatic"]
+  },
+  {
+    command: "ollama run --system",
+    description: "Set system message for model behavior. Define role and context for consistent responses.",
+    example: "ollama run llama2 --system 'You are a helpful coding assistant'",
+    keywords: ["system", "role", "context", "behavior"]
+  },
+  {
+    command: "ollama run --template",
+    description: "Use custom prompt template. Override default model template for specific use cases.",
+    example: "ollama run llama2 --template '{{.System}}\n{{.Prompt}}'",
+    keywords: ["template", "prompt", "custom", "format"]
+  },
+  {
+    command: "ollama run --keepalive",
+    description: "Control how long model stays loaded in memory. Optimize memory usage vs response time.",
+    example: "ollama run --keepalive 5m llama2",
+    keywords: ["keepalive", "memory", "optimization", "timeout"]
+  },
+  {
+    command: "ollama run --nowordwrap",
+    description: "Disable word wrapping in output. Useful for code generation or structured output.",
+    example: "ollama run --nowordwrap codellama 'Generate a Python function'",
+    keywords: ["nowordwrap", "code", "structured", "formatting"]
+  },
+  {
+    command: "OLLAMA_HOST",
+    description: "Set custom Ollama server host. Connect to remote Ollama instance or change default port.",
+    example: "OLLAMA_HOST=192.168.1.100:11434 ollama list",
+    keywords: ["host", "remote", "server", "port", "environment"]
+  },
+  {
+    command: "OLLAMA_MODELS",
+    description: "Set custom models directory. Change where Ollama stores downloaded models.",
+    example: "OLLAMA_MODELS=/custom/path ollama pull llama2",
+    keywords: ["models", "directory", "storage", "path", "custom"]
+  },
+  {
+    command: "ollama run --multiline",
+    description: "Enable multiline input mode. Send multiple lines of text before model processes input.",
+    example: "ollama run --multiline llama2",
+    keywords: ["multiline", "input", "multiple", "lines"]
   }
 ];

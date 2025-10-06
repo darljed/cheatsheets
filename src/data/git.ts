@@ -90,5 +90,71 @@ export const gitCommands: Command[] = [
     description: "Show differences between commits, branches, or working directory. Use --staged to see staged changes.",
     example: "git diff HEAD~1..HEAD",
     keywords: ["diff", "differences", "changes", "compare"]
+  },
+  {
+    command: "git fetch",
+    description: "Download objects and refs from remote repository without merging. Safe way to see what others have committed.",
+    example: "git fetch origin",
+    keywords: ["fetch", "download", "remote", "refs", "safe"]
+  },
+  {
+    command: "git remote",
+    description: "Manage remote repositories. Add, remove, or view remote connections to other repositories.",
+    example: "git remote add upstream https://github.com/original/repo.git",
+    keywords: ["remote", "upstream", "origin", "connection"]
+  },
+  {
+    command: "git tag",
+    description: "Create, list, or delete tags. Mark specific commits as releases or important milestones.",
+    example: "git tag -a v1.0.0 -m 'Release version 1.0.0'",
+    keywords: ["tag", "release", "version", "milestone"]
+  },
+  {
+    command: "git cherry-pick",
+    description: "Apply specific commits from another branch to current branch. Useful for hotfixes or selective merging.",
+    example: "git cherry-pick abc123",
+    keywords: ["cherry-pick", "selective", "hotfix", "commit"]
+  },
+  {
+    command: "git revert",
+    description: "Create new commit that undoes changes from previous commit. Safe way to undo without rewriting history.",
+    example: "git revert HEAD",
+    keywords: ["revert", "undo", "safe", "history"]
+  },
+  {
+    command: "git clean",
+    description: "Remove untracked files from working directory. Use -n for dry run, -f to force, -d for directories.",
+    example: "git clean -fd",
+    keywords: ["clean", "untracked", "remove", "directory"]
+  },
+  {
+    command: "git config",
+    description: "Set configuration options for Git. Configure user info, aliases, and behavior settings.",
+    example: "git config --global user.email 'you@example.com'",
+    keywords: ["config", "settings", "user", "global", "alias"]
+  },
+  {
+    command: "git blame",
+    description: "Show who last modified each line of a file. Useful for tracking down when bugs were introduced.",
+    example: "git blame src/main.js",
+    keywords: ["blame", "author", "history", "debug", "tracking"]
+  },
+  {
+    command: "git bisect",
+    description: "Binary search to find commit that introduced a bug. Efficiently narrow down problematic commits.",
+    example: "git bisect start && git bisect bad && git bisect good v1.0",
+    keywords: ["bisect", "binary", "search", "bug", "debug"]
+  },
+  {
+    command: "git reflog",
+    description: "Show reference logs of HEAD changes. Recover lost commits or see complete history of branch changes.",
+    example: "git reflog",
+    keywords: ["reflog", "recover", "lost", "commits", "history"]
+  },
+  {
+    command: "git worktree",
+    description: "Manage multiple working trees. Work on different branches simultaneously without switching.",
+    example: "git worktree add ../feature-branch feature-branch",
+    keywords: ["worktree", "multiple", "branches", "simultaneous"]
   }
 ];

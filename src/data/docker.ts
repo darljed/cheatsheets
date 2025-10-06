@@ -90,5 +90,71 @@ export const dockerCommands: Command[] = [
     description: "Create and start containers defined in docker-compose.yml. Use -d for detached mode, --build to rebuild images, and --scale to scale services.",
     example: "docker-compose up -d --build",
     keywords: ["compose", "multi-container", "yaml", "orchestration", "scale"]
+  },
+  {
+    command: "docker system prune",
+    description: "Clean up unused Docker objects. Remove stopped containers, unused networks, dangling images, and build cache.",
+    example: "docker system prune -a --volumes",
+    keywords: ["cleanup", "prune", "disk", "space", "unused"]
+  },
+  {
+    command: "docker stats",
+    description: "Display live resource usage statistics for containers. Monitor CPU, memory, network, and disk I/O in real-time.",
+    example: "docker stats --no-stream",
+    keywords: ["stats", "monitoring", "cpu", "memory", "performance"]
+  },
+  {
+    command: "docker cp",
+    description: "Copy files between container and host filesystem. Transfer files in both directions without stopping container.",
+    example: "docker cp container:/app/logs ./logs",
+    keywords: ["copy", "files", "transfer", "host", "container"]
+  },
+  {
+    command: "docker commit",
+    description: "Create new image from container's changes. Save current state of container as a new image layer.",
+    example: "docker commit my-container my-image:v2",
+    keywords: ["commit", "save", "state", "image", "layer"]
+  },
+  {
+    command: "docker save",
+    description: "Save image to tar archive. Export images for offline transfer or backup purposes.",
+    example: "docker save -o myapp.tar myapp:latest",
+    keywords: ["save", "export", "tar", "backup", "offline"]
+  },
+  {
+    command: "docker load",
+    description: "Load image from tar archive. Import previously saved images from file.",
+    example: "docker load -i myapp.tar",
+    keywords: ["load", "import", "tar", "restore", "file"]
+  },
+  {
+    command: "docker port",
+    description: "List port mappings for container. Show which host ports are mapped to container ports.",
+    example: "docker port my-container",
+    keywords: ["port", "mapping", "network", "expose"]
+  },
+  {
+    command: "docker top",
+    description: "Display running processes inside container. Similar to 'ps' command but for container processes.",
+    example: "docker top my-container",
+    keywords: ["top", "processes", "ps", "running"]
+  },
+  {
+    command: "docker history",
+    description: "Show image layer history. View how image was built and size of each layer.",
+    example: "docker history nginx:latest",
+    keywords: ["history", "layers", "build", "size"]
+  },
+  {
+    command: "docker update",
+    description: "Update container resource limits. Modify CPU, memory limits of running containers.",
+    example: "docker update --memory 512m my-container",
+    keywords: ["update", "resources", "limits", "memory", "cpu"]
+  },
+  {
+    command: "docker wait",
+    description: "Wait for container to stop and return exit code. Useful in scripts for synchronization.",
+    example: "docker wait my-container",
+    keywords: ["wait", "exit", "code", "synchronization", "script"]
   }
 ];

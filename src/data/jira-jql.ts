@@ -90,5 +90,71 @@ export const jiraJqlCommands: Command[] = [
     description: "Reference start of current day",
     example: "created >= startOfDay()",
     keywords: ["start", "day", "today", "beginning"]
+  },
+  {
+    command: "fixVersion =",
+    description: "Filter by target fix version for releases",
+    example: "fixVersion = \"2.1.0\" AND status != Closed",
+    keywords: ["fixversion", "release", "version", "target"]
+  },
+  {
+    command: "component =",
+    description: "Filter by project component or module",
+    example: "component = \"Authentication\" AND priority >= High",
+    keywords: ["component", "module", "area", "feature"]
+  },
+  {
+    command: "labels =",
+    description: "Filter by issue labels or tags",
+    example: "labels = \"security\" OR labels = \"performance\"",
+    keywords: ["labels", "tags", "categories", "classification"]
+  },
+  {
+    command: "resolution =",
+    description: "Filter by how issue was resolved",
+    example: "resolution = Fixed AND resolved >= -1w",
+    keywords: ["resolution", "fixed", "resolved", "outcome"]
+  },
+  {
+    command: "worklogDate >=",
+    description: "Find issues with work logged in specific timeframe",
+    example: "worklogDate >= startOfWeek() AND worklogAuthor = currentUser()",
+    keywords: ["worklog", "time", "logged", "effort"]
+  },
+  {
+    command: "duedate <=",
+    description: "Find issues due by specific date",
+    example: "duedate <= endOfWeek() AND status != Done",
+    keywords: ["duedate", "deadline", "schedule", "timeline"]
+  },
+  {
+    command: "Sprint =",
+    description: "Filter by Agile sprint (requires Agile plugin)",
+    example: "Sprint = \"PROJ Sprint 15\" AND status = \"In Progress\"",
+    keywords: ["sprint", "agile", "scrum", "iteration"]
+  },
+  {
+    command: "originalEstimate >=",
+    description: "Filter by original time estimate",
+    example: "originalEstimate >= 4h AND status = \"To Do\"",
+    keywords: ["estimate", "time", "effort", "planning"]
+  },
+  {
+    command: "remainingEstimate <=",
+    description: "Filter by remaining work estimate",
+    example: "remainingEstimate <= 2h AND assignee = currentUser()",
+    keywords: ["remaining", "estimate", "work", "left"]
+  },
+  {
+    command: "issueFunction in",
+    description: "Use advanced functions for complex queries",
+    example: "issueFunction in linkedIssuesOf(\"project = PROJ\")",
+    keywords: ["function", "advanced", "linked", "complex"]
+  },
+  {
+    command: "cf[10001] ~",
+    description: "Search custom fields by ID or name",
+    example: "cf[10001] ~ \"urgent\" OR \"Customer Impact\" is not EMPTY",
+    keywords: ["custom", "field", "cf", "specific"]
   }
 ];
