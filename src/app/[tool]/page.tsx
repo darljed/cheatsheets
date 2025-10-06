@@ -11,7 +11,9 @@ import {
   microsoftKqlCommands,
   npmCommands,
   yarnCommands,
-  nodeCommands
+  nodeCommands,
+  awsCliCommands,
+  pulumiCommands
 } from "@/data";
 
 const commandsMap = {
@@ -25,6 +27,8 @@ const commandsMap = {
   npm: npmCommands,
   yarn: yarnCommands,
   node: nodeCommands,
+  "aws-cli": awsCliCommands,
+  pulumi: pulumiCommands,
 };
 
 interface PageProps {

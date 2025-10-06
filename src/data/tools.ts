@@ -90,5 +90,23 @@ export const tools: Tool[] = [
     keywords: ["node", "nodejs", "runtime", "javascript", "debug", "performance"],
     title: "Node.js Cheat Sheet",
     subtitle: "Essential Node.js runtime commands and flags"
+  },
+  {
+    name: "AWS CLI",
+    href: "/aws-cli",
+    description: "Amazon Web Services command-line interface",
+    content: "Essential AWS CLI commands for managing cloud resources, services, and infrastructure.",
+    keywords: ["aws", "cli", "cloud", "amazon", "s3", "ec2", "lambda"],
+    title: "AWS CLI Cheat Sheet",
+    subtitle: "Essential Amazon Web Services CLI commands"
+  },
+  {
+    name: "Pulumi",
+    href: "/pulumi",
+    description: "Infrastructure as Code using familiar programming languages",
+    content: "Essential Pulumi commands for deploying and managing cloud infrastructure with code.",
+    keywords: ["pulumi", "infrastructure", "code", "iac", "cloud", "deployment"],
+    title: "Pulumi Cheat Sheet",
+    subtitle: "Essential Infrastructure as Code commands"
   }
 ];
