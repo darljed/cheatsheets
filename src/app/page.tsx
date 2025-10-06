@@ -3,37 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-
-const tools = [
-  {
-    name: "Docker",
-    href: "/docker",
-    description: "Container management commands and examples",
-    content: "Essential Docker commands for building, running, and managing containers.",
-    keywords: ["container", "build", "run", "image", "compose"]
-  },
-  {
-    name: "Git",
-    href: "/git",
-    description: "Version control commands and workflows",
-    content: "Essential Git commands for version control, branching, and collaboration.",
-    keywords: ["version", "control", "branch", "commit", "merge"]
-  },
-  {
-    name: "Splunk CLI",
-    href: "/splunk",
-    description: "Splunk command-line interface commands",
-    content: "Essential Splunk CLI commands for data indexing, searching, and management.",
-    keywords: ["splunk", "search", "index", "log", "data"]
-  },
-  {
-    name: "Ollama",
-    href: "/ollama",
-    description: "Local AI model management commands",
-    content: "Essential Ollama commands for running and managing AI models locally.",
-    keywords: ["ai", "model", "local", "llm", "machine learning"]
-  }
-];
+import { tools } from "@/data";
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
