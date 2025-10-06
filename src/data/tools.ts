@@ -21,7 +21,7 @@ export const tools: Tool[] = [
   },
   {
     name: "Splunk CLI",
-    href: "/splunk",
+    href: "/splunk-cli",
     description: "Splunk command-line interface commands",
     content: "Essential Splunk CLI commands for data indexing, searching, and management.",
     keywords: ["splunk", "search", "index", "log", "data"],

@@ -1,6 +1,6 @@
 import { Command } from "@/types";
 
-export const splunkCommands: Command[] = [
+export const splunkCLICommands: Command[] = [
   {
     command: "splunk start",
     description: "Start Splunk services. Starts splunkd daemon and splunkweb interface. Use --accept-license to skip license prompt.",
