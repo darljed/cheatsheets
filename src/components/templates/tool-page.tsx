@@ -51,7 +51,7 @@ export function ToolPage({ title, subtitle, commands }: ToolPageProps) {
 
       <div className="grid gap-4">
         {filteredCommands.map((cmd, index) => (
-          <Card key={index}>
+          <Card key={index} className="min-w-0">
             <CardHeader>
               <CardTitle className="flex items-center justify-between">
                 <code className="text-lg font-mono bg-muted px-2 py-1 rounded">
@@ -63,8 +63,8 @@ export function ToolPage({ title, subtitle, commands }: ToolPageProps) {
             </CardHeader>
             {cmd.example && (
               <CardContent>
-                <div className="bg-muted p-3 rounded-md">
-                  <p className="text-sm font-mono">{cmd.example}</p>
+                <div className="bg-muted p-3 rounded-md overflow-x-auto">
+                  <p className="text-sm font-mono whitespace-nowrap">{cmd.example}</p>
                 </div>
                 <div className="mt-3">
                   <p className="text-xs text-muted-foreground">
