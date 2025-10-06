@@ -79,7 +79,7 @@ export function ToolPage({ title, subtitle, commands }: ToolPageProps) {
       
       {filteredCommands.length === 0 && searchTerm && (
         <div className="text-center py-8">
-          <p className="text-muted-foreground">No commands found matching "{searchTerm}"</p>
+          <p className="text-muted-foreground">No commands found matching &quot;{searchTerm}&quot;</p>
         </div>
       )}
     </div>
