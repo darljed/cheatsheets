@@ -13,7 +13,8 @@ import {
   yarnCommands,
   nodeCommands,
   awsCliCommands,
-  pulumiCommands
+  pulumiCommands,
+  prismaCommands
 } from "@/data";
 
 const commandsMap = {
@@ -29,6 +30,7 @@ const commandsMap = {
   node: nodeCommands,
   "aws-cli": awsCliCommands,
   pulumi: pulumiCommands,
+  prisma: prismaCommands,
 };
 
 interface PageProps {

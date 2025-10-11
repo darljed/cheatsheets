@@ -11,3 +11,4 @@ export { yarnCommands } from "./yarn";
 export { nodeCommands } from "./node";
 export { awsCliCommands } from "./aws-cli";
 export { pulumiCommands } from "./pulumi";
+export { prismaCommands } from "./prisma";

@@ -108,5 +108,14 @@ export const tools: Tool[] = [
     keywords: ["pulumi", "infrastructure", "code", "iac", "cloud", "deployment"],
     title: "Pulumi Cheat Sheet",
     subtitle: "Essential Infrastructure as Code commands"
+  },
+  {
+    name: "Prisma",
+    href: "/prisma",
+    description: "Modern database toolkit and ORM for TypeScript and JavaScript",
+    content: "Essential Prisma commands for database schema management, migrations, and client generation.",
+    keywords: ["prisma", "orm", "database", "schema", "migration", "typescript"],
+    title: "Prisma Cheat Sheet",
+    subtitle: "Essential Prisma ORM commands"
   }
 ];
